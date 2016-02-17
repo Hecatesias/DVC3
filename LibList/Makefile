@@ -1,11 +1,8 @@
-NAME = libmy.a
+NAME = liblist.a
 
-SRC =  my_putchar.c \
-       my_put_nbr.c \
-       my_putstr.c  \
-       my_strlen.c  \
-       my_strcmp.c  \
-       my_strcpy.c  \
+SRC =	addingElement.c \
+		deleteElement.c \
+		searchElement.c \
 
 OBJ = $(SRC:%.c=%.o)
 AR  = ar r

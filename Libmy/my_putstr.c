@@ -1,4 +1,3 @@
-
 #include "libmy.h"
 
 int		my_putstr(char *str)
