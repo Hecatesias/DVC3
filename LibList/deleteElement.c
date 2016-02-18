@@ -1,31 +1,35 @@
-#include "liblist.h"
+#include "Liblist.h"
 
-theList deleteElementinFirst(theList myList)
+myList	*deleteElementinFirst(myList *myList)
 {
+    myList *toReturn;
+
+    toReturn = myList->next;
     if(myList != NULL)
     {
-        element* toReturn = myList->next;
         free(myList);
-        return toReturn;
+        return (toReturn);
     }
     else
     {
-        return NULL;
+      return (NULL);
     }
 }
-
-theList deleteElementinLast(theList myList)
+/*
+myList	*deleteElementinLast(myList *myList)
 {
+    myList* tmp = myList;
+    myList* tmp2 = myList;
+
     if(myList == NULL)
-        return NULL;
+      return (NULL);
     if(myList->next == NULL)
     {
         free(myList);
-        return NULL;
+        return (NULL);
     }
  
-    element* tmp = myList;
-    element* tmp2 = myList;
+
     while(tmp->next != NULL)
     {
         tmp2 = tmp;
@@ -33,5 +37,6 @@ theList deleteElementinLast(theList myList)
     }
     tmp2->next = NULL;
     free(tmp);
-    return myList;
+    return (myList);
 }
+*/

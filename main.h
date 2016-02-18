@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-##include "libError/"
-##include "libList/"
-##include "libParse/"
+//#include "libError/"
+#include "LibList/Liblist.h"
+//#include "libParse/"
