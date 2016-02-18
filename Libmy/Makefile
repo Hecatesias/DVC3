@@ -15,7 +15,6 @@ RM  = rm -rf
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
 	$(RAN) $(NAME)
-	cp $(NAME) ../
 
 all: $(NAME)
 

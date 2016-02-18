@@ -1,6 +1,11 @@
 NAME = ../liblist.a
 
 SRC =	addingElement.c \
+		deleteElement.c \
+		searchElement.c \
+		createList.c \
+		deleteList.c \
+
 
 OBJ = $(SRC:%.c=%.o)
 AR  = ar r
