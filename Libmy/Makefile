@@ -1,4 +1,4 @@
-NAME = libmy.a
+NAME = ../libmy.a
 
 SRC =  my_putchar.c \
        my_put_nbr.c \

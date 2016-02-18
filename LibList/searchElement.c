@@ -1,15 +1,15 @@
 #include "liblist.h"
 
-theList searchElement(theList myList, int value)
+myList      searchElement(myList *chainList, int value)
 {
-    element *tmp = myList;
+    myList *tmp = chainList;
     while(tmp != NULL)
     {
-        if(tmp->val == value)
+        if(tmp->next == value)
         {
-            return tmp;
+            return *(tmp);
         }
         tmp = tmp->next;
     }
-    return NULL;
+    return *(chainList);
 }
